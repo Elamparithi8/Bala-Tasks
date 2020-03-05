@@ -1,0 +1,76 @@
+<html>
+	<head>
+	<style>
+		#box{
+			width:100px;
+			height:100px;
+			border:2px solid black;
+		}
+		#box1{
+			width:200px;
+			border:2px solid black;
+			margin-top:30px;
+		}		
+	</style>
+	</head>
+	<body>
+
+		<div id="box">
+	</div>
+		<button onclick="Randomnumber(255)">Click Me</button>
+		<div id="box1">
+	</div>
+		<button onclick="ColorR()">to change as red color </button>
+		<button onclick="ColorB()">to change as blue color </button>
+		<button onclick="ColorG()">to change as green color </button>
+		<button onclick="ColorY()">to change as yellow color </button>
+	
+
+
+	</body>
+
+	<script>
+			
+			
+			
+			function ColorR(Randomnumber(255)){
+				var   color="rgb("+Randomnumber(255)+","+Randomnumber(255)+","+Randomnumber(255)+")"
+				return color;
+			document.getElementById("box").style.backgroundColor=color
+						}
+			function ColorG(){
+				var   color="rgb("+0+","+128+","+0+")"
+			console.log(color);
+			document.getElementById("box").style.backgroundColor=color
+						}
+			function ColorB(){
+				var   color="rgb("+0+","+0+","+250+")"
+			console.log(color);
+			document.getElementById("box").style.backgroundColor=color
+						}
+			function ColorY(){
+				var   color="rgb("+250+","+250+","+0+")"
+			console.log(color);
+			document.getElementById("box").style.backgroundColor=color
+						}
+				function Randomnumber(limit){
+				number= Math.round(Math.random()*limit);
+				return number;
+			}
+			var count=0;
+			function changeNumbers(){
+					count++;
+			document.getElementById("box1").innerHTML+="<li>"+Randomnumber(100)+"</li>"
+			}
+			function Randomnumber(limit){
+				number= Math.round(Math.random()*limit);
+				return number;
+			}
+
+
+
+
+		</script>
+
+	
+</html>
